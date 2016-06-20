@@ -5,6 +5,7 @@ rescue LoadError
 end
 
 require 'rdoc/task'
+require File.expand_path('../config/application', __FILE__)
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'

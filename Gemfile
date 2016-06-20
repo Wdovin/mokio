@@ -1,4 +1,12 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
+
+gem 'rails', '4.1.4'
+
+### OpenShift Online changes:
+# Fix the conflict with the system 'rake':
+gem 'rake', '~> 0.9.6'
+
+
 
 # Declare your gem's dependencies in mokio.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -57,6 +65,8 @@ gem 'haml2slim'
 
 
 
+# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+gem 'spring',        group: :development
 
 
 
