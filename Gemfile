@@ -71,9 +71,21 @@ group :development, :test do
     gem 'deface'
 end
 
+
+
+
+
 gem 'haml2slim'
 
+# Add support for the MySQL
+group :production, :mysql do
+# gem 'mysql2'
+  gem 'mysql2', '0.3.18'
+end
 
+group :production, :postgresql do
+  gem 'pg'
+end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
