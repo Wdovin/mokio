@@ -30,6 +30,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Support for databases and environment.
+# Use 'sqlite3' for testing and development and mysql and postgresql
+# for production.
+#
+# To speed up the 'git push' process you can exclude gems from bundle install:
+# For example, if you use rails + mysql, you can:
+#
+# $ rhc env set BUNDLE_WITHOUT="development test postgresql"
+#
 group :development, :test do
   gem 'rspec-rails'
   gem "factory_girl_rails"
@@ -43,7 +52,8 @@ group :development, :test do
   gem "selenium-webdriver"
   gem 'simplecov'
   gem 'activerecord-import'
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git' # Annotate ActiveRecord models as a gem
+  gem 'annotate', "2.6.5"
+  # gem 'annotate','2.6.5' #, :git => 'git://github.com/ctran/annotate_models.git' # Annotate ActiveRecord models as a gem
   gem 'quiet_assets' #turns off the Rails asset pipeline log
   gem 'rack-mini-profiler' # displays speed badge for every html page
   #gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
