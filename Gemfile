@@ -80,7 +80,7 @@ gem 'haml2slim'
 # Add support for the MySQL
 group :production, :mysql do
 # gem 'mysql2'
-  gem 'mysql2', '0.3.18'
+ # gem 'mysql2', '0.3.18'
 end
 
 group :production, :postgresql do
