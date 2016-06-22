@@ -80,7 +80,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'faraday',                     '~> 0.7',   '>= 0.7.6'
   s.add_dependency 'validates',                   '~> 0.0',   '>= 0.0.8'
   s.add_dependency 'friendly_id',                 '~> 5.0',   '>= 5.0.3'
-  s.add_dependency 'video_info',                  '~> 2.3',   '>= 2.6.1'
+  s.add_dependency 'video_info',                  '2.3.2',   '>= 2.3.1' # TODO problems with >=2.6.1
   s.add_dependency 'disqus',                      '~> 1.0',   '>= 1.0.4'
   s.add_dependency 'devise',                      '~> 3.2',   '>= 3.2.4'
   s.add_dependency 'role_model',                  '~> 0.8',   '>= 0.8.1'
