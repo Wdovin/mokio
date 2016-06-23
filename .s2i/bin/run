@@ -1,3 +1,10 @@
-#!/bin/sh
+#!/bin/bash 
+ 
+set -e 
+ 
+ 
+echo "---> Installing application source..." 
+
+
 sudo su
-yum install ImageMagick-devel ImageMagick
+sudo yum install ImageMagick-devel ImageMagick
