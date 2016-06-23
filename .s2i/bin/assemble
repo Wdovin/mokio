@@ -7,4 +7,4 @@ echo "---> Installing application source..."
 
 
 #sudo su
-su yum install ImageMagick-devel ImageMagick
+exec yum install ImageMagick-devel ImageMagick
