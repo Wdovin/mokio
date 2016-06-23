@@ -10,5 +10,9 @@ if [[ "$RUBY_VERSION" == "1.8" ]]; then
   exit 1
 fi
 
+
+sudo su
+yum install ImageMagick-devel ImageMagick
+
 echo "from pre_build"
-echo export
+echo $(export)

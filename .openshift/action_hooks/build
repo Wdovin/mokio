@@ -4,6 +4,9 @@
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 
+sudo su
+yum install ImageMagick-devel ImageMagick
+
 echo "from pre_build"
-echo export
+echo $(export)
 
